@@ -53,6 +53,18 @@ flowchart LR
 ```
 
 `dev-web`은 자체 백엔드가 없습니다 — 모든 데이터의 원본은 `dev-data-embed`의 FastAPI입니다.
+계층 구조·데이터 파이프라인·스트리밍 처리 흐름 같은 더 자세한 다이어그램은 각 저장소 README에 있습니다.
+
+## 🚀 빠른 시작
+
+```bash
+# 1) 백엔드 (dev-data-embed, :8000)
+python -m pip install -e .
+uvicorn app.main:app --reload
+
+# 2) 프론트엔드 (dev-web, :3000) — 별도 터미널
+cd frontend/public && python3 -m http.server 3000
+```
 
 ## 📄 라이선스
 
