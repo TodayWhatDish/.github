@@ -43,7 +43,7 @@ AI가 사료 · 간식을 추천하고 질문에 답하는 서비스
 | **AI 상담** | 유사 후기 · 구매 이력 · 성분표를 근거로 답변을 스트리밍 |
 | **답변 반증** | 답변을 만든 모델과 다른 모델이 고객 정보 · 상품 자료와 대조해 정확도 표시 |
 | **고객 분석 · 판매 전략** | 관리자 대시보드에서 구매 이력 · 구매 금액 그래프 · 응대안 확인 |
-| **품질 평가** | 홀드아웃 후기로 recall@k · MRR, RAGAS 채점 |
+| **품질 평가** | 홀드아웃 후기로 recall@k · MRR, 알러지 · 축종 위반 여부 채점 |
 
 ## 아키텍처
 
@@ -82,7 +82,7 @@ flowchart LR
 | 영역 | 사용 기술 | 저장소 |
 |---|---|---|
 | 백엔드 | Python 3.12, FastAPI, Pydantic v2, pytest, PyJWT · bcrypt | dev-data-embed |
-| 데이터 / AI | SQLAlchemy 2.0, PostgreSQL(pgvector), OpenAI(답변 · 임베딩), Claude(반증), LangChain · LangGraph, RAGAS | dev-data-embed |
+| 데이터 / AI | SQLAlchemy 2.0, PostgreSQL(pgvector), OpenAI(답변 · 임베딩), Claude(반증), LangChain · LangGraph | dev-data-embed |
 | 프론트엔드 | Next.js 16, React 19, JavaScript, Chart.js, NDJSON Streaming | dev-web |
 | 배포 / 협업 | Vercel, Railway, Docker, Supabase, Git, Slack, Jira | |
 | 수집 데이터 | 더미 데이터 | |
