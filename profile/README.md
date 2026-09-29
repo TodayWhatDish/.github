@@ -15,7 +15,7 @@ AI가 사료 · 간식을 추천하고 질문에 답하는 서비스
 ![Railway](https://img.shields.io/badge/Railway-0B0D0E?logo=railway&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000?logo=vercel)
 
-**[서비스 바로가기 → twd-web.vercel.app](https://twd-web.vercel.app)**
+**[서비스 바로가기 → twd-web.vercel.app](https://twd-web.vercel.app)** · **[📊 성능 비교 리포트](https://github.com/TodayWhatDish/dev-data-embed/blob/main/docs/PERFORMANCE.md)**
 
 <img src="./images/site.png" alt="오늘뭐멍냥 소개 사이트" width="100%"/>
 
